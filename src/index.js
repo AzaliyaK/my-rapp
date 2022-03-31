@@ -1,8 +1,8 @@
-import React from "react";
+import React,{StrictMode} from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
-import reportWebVitals from "./reportWebVitals";
+import { Header } from "./App";
 
 // const elem = <h2>Hello, Azaliya!</h2>;
 // const elem = React.createElement(
@@ -10,21 +10,19 @@ import reportWebVitals from "./reportWebVitals";
 //   { classname: "greetings" },
 //   "Слава Роду!"
 // );
-const text = "Hello, Azaliya!";
-const elem = (
-  <div>
-    <h2 className="text">{text}</h2>
-    <input type="text" />
-    <label htmlFor=""></label>
-    <button tabIndex="0">ClickMe</button>
-  </div>
-);
+// const text = "Hello, Azaliya!";
+// const elem = (
+//   <div>
+//     <h2 className="text">{text}</h2>
+//     <input type="text" />
+//     <label htmlFor=""></label>
+//     <button tabIndex="0">ClickMe</button>
+//   </div>
+// );
 ReactDOM.render(
-  // <React.StrictMode>
-  //   <App />
-  // </React.StrictMode>,
-  elem,
+  // elem,
+  <StrictMode>
+    <App />
+  </StrictMode>,
   document.getElementById("root")
 );
-
-reportWebVitals();
